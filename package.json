@@ -1,15 +1,26 @@
 {
-  "name": "lib-markdown",
+  "name": "lib-markdown-vam",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "jest ./test",
-    "cli": "node cli.js ./arquivos/texto1.md"
+  "keywords": ["markdown", "URL"],
+  "main": "./cli.js",
+  "bin": {
+  "lib-markdown-vam": "./cli.js"
   },
-  "keywords": [],
-  "author": "",
+  "preferGlobal": true,
+ "scripts": {
+   "test": "jest ./test",
+   "cli": "node ./src/cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KiraVini/lib-markdown-vam.git"
+  },
+  "author": "Vinícius Akira",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KiraVini/lib-markdown-vam.git/issues"
+  },
   "dependencies": {
     "chalk": "^4.1.2",
     "node-fetch": "^3.2.6"
